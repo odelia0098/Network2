@@ -1,6 +1,6 @@
 from mininet.topo import Topo
 class my_topology(Topo):
-	"11 Switches connected to 11 hosts."
+	"10 Switches connected to 10 hosts."
 	def __init__ (self):
 		"create my topology"
 		
@@ -18,7 +18,7 @@ class my_topology(Topo):
 		Host8 = self.addHost('h8')
 		Host9 = self.addHost('h9')
 		Host10 = self.addHost('h10')
-		Host11 = self.addHost('h11')
+		
 		# Adding Switches
 		Switch1 = self.addSwitch('s1')
 		Switch2 = self.addSwitch('s2')
@@ -30,7 +30,7 @@ class my_topology(Topo):
 		Switch8 = self.addSwitch('s8')
 		Switch9 = self.addSwitch('s9')
 		Switch10 = self.addSwitch('s10')
-		Switch11 = self.addSwitch('s11')
+		
 		
 		# Adding Links
 		self.addLink(Switch1, Switch2)
@@ -42,7 +42,7 @@ class my_topology(Topo):
 		self.addLink(Switch7, Switch8)
 		self.addLink(Switch8, Switch9)
 		self.addLink(Switch9, Switch10)
-		self.addLink(Switch10, Switch11)
+		
 		
 		self.addLink(Host1, Switch1)
 		self.addLink(Host2, Switch2)
@@ -54,7 +54,7 @@ class my_topology(Topo):
 		self.addLink(Host8, Switch8)
 		self.addLink(Host9, Switch9)
 		self.addLink(Host10, Switch10)
-		self.addLink(Host11, Switch11)	
+		
 			
 			
 topos = {'my_topology' : ( lambda:my_topology() )}			
