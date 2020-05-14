@@ -6,18 +6,19 @@ class my_topology(Topo):
 		
 		# Initialize topology
 		Topo.__init__( self )
+		
 		# Adding Hosts
-		Host1 = self.addHost('s1')
-		Host2 = self.addHost('s2')
-		Host3 = self.addHost('s3')
-		Host4 = self.addHost('s4')
-		Host5 = self.addHost('s5')
-		Host6 = self.addHost('s6')
-		Host7 = self.addHost('s7')
-		Host8 = self.addHost('s8')
-		Host9 = self.addHost('s9')
-		Host10 = self.addHost('s10')
-		Host11 = self.addHost('s11')
+		Host1 = self.addHost('h1')
+		Host2 = self.addHost('h2')
+		Host3 = self.addHost('h3')
+		Host4 = self.addHost('h4')
+		Host5 = self.addHost('h5')
+		Host6 = self.addHost('h6')
+		Host7 = self.addHost('h7')
+		Host8 = self.addHost('h8')
+		Host9 = self.addHost('h9')
+		Host10 = self.addHost('h10')
+		Host11 = self.addHost('h11')
 		# Adding Switches
 		Switch1 = self.addSwitch('s1')
 		Switch2 = self.addSwitch('s2')
