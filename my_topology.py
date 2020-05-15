@@ -42,7 +42,7 @@ class my_topology(Topo):
 		self.addLink(Switch7, Switch8)
 		self.addLink(Switch8, Switch9)
 		self.addLink(Switch9, Switch10)
-		
+		self.addLink(Switch10, Switch1)
 		
 		self.addLink(Host1, Switch1)
 		self.addLink(Host2, Switch2)
