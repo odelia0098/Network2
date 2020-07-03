@@ -105,6 +105,18 @@ flow6 = {
     "in_port":"3",
     "active":"true",
     "actions":"output=5"
+    }
+    
+flow7 = {
+    "switch":"00:00:00:00:00:00:00:0a",
+    "name":"flow6",
+    "eth_type":"0x0800",
+    "ipv4_src":"10.0.0.01",
+    "ipv4_dst":"10.0.0.05",
+    "priority":"32768",
+    "in_port":"3",
+    "active":"true",
+    "actions":"output=5"
     }     
   
 pusher.set(flow1)
@@ -113,3 +125,4 @@ pusher.set(flow3)
 pusher.set(flow4)
 pusher.set(flow5)
 pusher.set(flow6)
+pusher.set(flow7)
