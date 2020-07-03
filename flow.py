@@ -48,7 +48,7 @@ flow1 = {
     }
   
 flow2 = {
-    "switch":"00:00:00:00:00:00:00:01",
+    "switch":"00:00:00:00:00:00:00:02",
     "name":"flow2",
     "eth_type":"0x0800",
     "ipv4_src":"10.0.0.01",
@@ -60,7 +60,7 @@ flow2 = {
     }
     
 flow3 = {
-    "switch":"00:00:00:00:00:00:00:02",
+    "switch":"00:00:00:00:00:00:00:05",
     "name":"flow3",
     "eth_type":"0x0800",
     "ipv4_src":"10.0.0.01",
@@ -72,7 +72,7 @@ flow3 = {
     } 
 
 flow4 = {
-    "switch":"00:00:00:00:00:00:00:05",
+    "switch":"00:00:00:00:00:00:00:08",
     "name":"flow4",
     "eth_type":"0x0800",
     "ipv4_src":"10.0.0.01",
@@ -84,7 +84,7 @@ flow4 = {
     } 
 
 flow5 = {
-    "switch":"00:00:00:00:00:00:00:08",
+    "switch":"00:00:00:00:00:00:00:0a",
     "name":"flow5",
     "eth_type":"0x0800",
     "ipv4_src":"10.0.0.01",
@@ -106,18 +106,7 @@ flow6 = {
     "active":"true",
     "actions":"output=5"
     }
-    
-flow7 = {
-    "switch":"00:00:00:00:00:00:00:0a",
-    "name":"flow6",
-    "eth_type":"0x0800",
-    "ipv4_src":"10.0.0.01",
-    "ipv4_dst":"10.0.0.05",
-    "priority":"32768",
-    "in_port":"3",
-    "active":"true",
-    "actions":"output=5"
-    }     
+ 
   
 pusher.set(flow1)
 pusher.set(flow2)
@@ -125,4 +114,3 @@ pusher.set(flow3)
 pusher.set(flow4)
 pusher.set(flow5)
 pusher.set(flow6)
-pusher.set(flow7)
